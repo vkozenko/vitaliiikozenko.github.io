@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="uk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моє резюме</title>
+    <style>
+        /* Основні стилі */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #202020;
+            color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #006400;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #f4f4f4;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        
+        nav ul li a:hover {
+            background-color: #008000;
+        }
+        
+        /* Контейнер сторінки */
+        .page-container {
+            display: flex;
+            justify-content: space-between;
+            height: calc(100% - 80px); /* Висота екрану мінус висота header та nav */
+            margin: auto;
+            padding: 20px;
+            width: 100%;
+        }
+        
+        /* Ліва і права частини */
+        .left-side, .right-side {
+            width: 48%;
+            overflow-y: auto;
+        }
+        
+        /* Стилі для фотографії */
+        .avatar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #006400;
+        }
+        
+        /* Заголовки */
+        h2 {
+            margin-top: 0;
+            color: #00ff00;
+        }
+        
+        /* Списки */
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        /* Секції в лівій частині */
+        .left-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Моє резюме</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#portfolio">Портфоліо</a></li><ul>                  
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+    <div class="page-container">
+        <!-- Ліва частина -->
+        <div class="left-side">
+            <!-- Секція особистих даних -->
+            <div class="left-section" id="home">
+                <h2>Особисті дані</h2>
+                <div class="avatar">
+                    <img src="https://www.fclviv.com.ua/wp-content/uploads/1502320085-2391.jpg" alt="photo" class='image'>
+                </div>
+                <ul>
+                    <li>Ім'я: Віталій</li>
+                    <li>Вік: 17</li>
+                    <li>Місце проживання: Івано-Франківськ, Україна</li>
+                </ul>
+            </div>
+            <!-- Секція інтересів -->
+            <div class="left-section">
+                <h2>Інтереси</h2>
+                <ul>
+                    <li>Футбол</li>
+                    <li>Криптовалюта</li>
+                    <li>Активний відпочинок</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Права частина -->
+        <div class="right-side">
+            <!-- Секція портфоліо -->
+            <div id="portfolio">
+                <h2>Портфоліо</h2>
+                <ul>
+                    <li>Закінчив школу , вчусь на програміста.Займаюсь футболом та роблю основну ставку на футбол хочу добитись висот в цьому</li>
+                </ul>
+            </div>
+            <!-- Секція контактів -->
+            <div id="contact">
+                <h2>Контакти</h2>
+                <ul>
+                    <li>Email:  kozenko@example.com</li>
+                    <li>Телефон: +380965443728</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
